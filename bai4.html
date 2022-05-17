@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+
+
+let array = [i];
+    let tong=0;
+    for (let i=0; i<500; i++ ){
+        let check=false
+        if ( array[i]>1 && array[i]<500) {
+            for (let a = 2; a < array[i]; a++) {
+                if (array[i] % a === 0) {
+
+                    check = true
+                    break
+                }
+
+            }
+            if (!check) {
+                tong += array[i]
+            }
+        }
+    }
+console.log(tong)
+
+
+</script>
+</html>
